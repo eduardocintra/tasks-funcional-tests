@@ -14,7 +14,7 @@ public class TaskTest {
 	
 	
 	public WebDriver acessarAplicacao() {
-		
+		System.setProperty("webdriver.chrome.driver","C:\\chromedriver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.navigate().to("http://localhost:8001/tasks/");
 		return driver;
